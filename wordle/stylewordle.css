@@ -1,0 +1,184 @@
+@media only screen and (min-width:1000px) {
+
+    .titre {
+        font-size: 100px;
+        letter-spacing: 15px;
+
+        margin-bottom: 20px !important;
+    }
+    .lettre{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 40px;
+        width: 70px;
+        line-height: 40px;
+
+    }
+    .doubleEspace{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 40px;
+        width: 140px;
+        line-height: 40px;
+        font-size: 200%;
+
+    }
+    .regles {
+        margin-top: 10px;
+        margin-bottom:10px;
+        margin-left: 20%;
+        margin-right: 20%;
+        align-self: center;
+    }
+    
+    .regles>div {
+        margin-top: 10px !important;
+        margin-bottom:10px!important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        height: 30px;
+        width: 500px;
+        font-size: 16px;
+    }
+    
+    .letterBox {
+        height: 60px;
+        width: 90px;
+        line-height: 60px;
+        font-size: 60px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    html{
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+        margin-left: 0.3vh;
+        margin-right: 0.3vh;
+    }
+    .titre {
+        font-size: 10vw;
+        letter-spacing: 1vw;
+        margin-top: 5vh !important;
+        margin-bottom: 5vh !important;
+    }
+    .lettre{
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+        margin-left: 0.3vh;
+        margin-right: 0.3vh;
+        height: 4.5vh;
+        width: 9vw;
+        line-height: 4.5vh;
+        font-size: 2vh;
+    }
+    .doubleEspace{
+        height: 5vw;
+        width: 15vw;
+        line-height: 5vw;
+        font-size: 4.5vw;
+        margin-top: 0.5vw !important;
+        margin-bottom: 0.5vw!important;
+        margin-left: 0.3vh !important;
+        margin-right: 0.3vh !important;
+
+    }
+    .regles {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        margin-left: 8vw !important;
+    }
+    
+    .regles>div {
+        margin-top: 0.5vh !important;
+        margin-bottom: 0.5vh!important;
+        margin-left: 1vw !important;
+        margin-right: 1vw !important;
+        height: 4vh;
+        width: 12vw;
+        font-size: 1.5vh;
+    }
+    
+    .letterBox {
+        height: 7vh;
+        width: 15vw;
+        line-height: 7vh;
+        font-size: 5vh;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+        margin-left: 0.3vh;
+        margin-right: 0.3vh;
+    }
+}
+
+
+
+.jeux {
+    align-items: center;
+}
+
+html {
+    background-color: rgb(37, 37, 37);
+    color: rgb(219, 219, 219);
+
+}
+
+.titre {
+    line-height: 100%;
+    text-align: center;
+
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.lettre {
+    text-align: center;
+    padding: auto;
+    cursor: pointer;
+    background-color: rgb(129, 129, 129);
+    color: rgb(219, 219, 219);
+    text-align: center;
+}
+
+.doubleEspace {
+    cursor: pointer;
+    background-color: rgb(255, 93, 115);
+    text-align: center;
+
+}
+
+.gris {
+    background-color: rgb(73, 71, 91) !important;
+}
+
+.vert {
+    background-color: rgb(217, 56, 61) !important;
+}
+
+.bleu {
+    background-color: rgb(0, 122, 80) !important;
+}
+.regles {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.letterBox {
+    background-color: rgb(129, 129, 129);
+    text-align: center;
+    font-weight: 1000;
+    color: rgb(219, 219, 219);
+}

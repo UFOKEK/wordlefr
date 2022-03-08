@@ -1,0 +1,105 @@
+<link rel="stylesheet" href="stylewordle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="wordlescript.js"></script>
+<header>
+    <div class="titre">Mot du jour!</div>
+</header>
+<div class="jeux">
+
+    <div class="line actif">
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+
+    </div>
+    <div class="line">
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+
+    </div>
+    <div class="line">
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+
+    </div>
+    <div class="line">
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+
+    </div>
+    <div class="line">
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+
+    </div>
+    <div class="line">
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+        <div class="letterBox"></div>
+
+    </div>
+</div>
+<div class="regles">
+    <div class="gris" id="exGris"></div>
+    <div id="regleGris">Pas dans le mot</div>
+    <div class="vert" id="exVert"></div>
+    <div id="regleVert">Mauvaise position</div>
+    <div class="bleu" id="exBleu"></div>
+    <div id="regleBleu">Parfait!</div>
+</div>
+
+
+<div class="clavier">
+    <div class="line">
+        <div class="lettre "id="lettreQ" onclick="ecrireLettre('Q')">Q</div>
+        <div class="lettre "id="lettreW" onclick="ecrireLettre('W')">W</div>
+        <div class="lettre "id="lettreE" onclick="ecrireLettre('E')">E</div>
+        <div class="lettre "id="lettreR" onclick="ecrireLettre('R')">R</div>
+        <div class="lettre "id="lettreT" onclick="ecrireLettre('T')">T</div>
+        <div class="lettre "id="lettreY" onclick="ecrireLettre('Y')">Y</div>
+        <div class="lettre "id="lettreU" onclick="ecrireLettre('U')">U</div>
+        <div class="lettre "id="lettreI" onclick="ecrireLettre('I')">I</div>
+        <div class="lettre "id="lettreO" onclick="ecrireLettre('O')">O</div>
+        <div class="lettre "id="lettreP" onclick="ecrireLettre('P')">P</div>
+    </div>
+    <div class="line">
+        <div class="lettre "id="lettreA" onclick="ecrireLettre('A')">A</div>
+        <div class="lettre "id="lettreS" onclick="ecrireLettre('S')">S</div>
+        <div class="lettre "id="lettreD" onclick="ecrireLettre('D')">D</div>
+        <div class="lettre "id="lettreF" onclick="ecrireLettre('F')">F</div>
+        <div class="lettre "id="lettreG" onclick="ecrireLettre('G')">G</div>
+        <div class="lettre "id="lettreH" onclick="ecrireLettre('H')">H</div>
+        <div class="lettre "id="lettreJ" onclick="ecrireLettre('J')">J</div>
+        <div class="lettre "id="lettreK" onclick="ecrireLettre('K')">K</div>
+        <div class="lettre "id="lettreL" onclick="ecrireLettre('L')">L</div>
+    </div>
+    <div class="line">
+        <div class="deviner doubleEspace" onclick="jouer()">Jouer</div>
+        <div class="lettre "id="lettreZ" onclick="ecrireLettre('Z')">Z</div>
+        <div class="lettre "id="lettreX" onclick="ecrireLettre('X')">X</div>
+        <div class="lettre "id="lettreC" onclick="ecrireLettre('C')">C</div>
+        <div class="lettre "id="lettreV" onclick="ecrireLettre('V')">V</div>
+        <div class="lettre "id="lettreB" onclick="ecrireLettre('B')">B</div>
+        <div class="lettre "id="lettreN" onclick="ecrireLettre('N')">N</div>
+        <div class="lettre "id="lettreM" onclick="ecrireLettre('M')">M</div>
+        <div class="doubleEspace suprm " onclick="supprimer()">Suppr.</div>
+    </div>
+</div>
+
+
