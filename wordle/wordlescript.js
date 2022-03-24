@@ -424,16 +424,16 @@ function jouer() {
 function emojiThis(resultats){
     var color_map = {0: '🟦', 1: '🟥', 2: '🟩'};
     var traduction = ["Mot du jour"]
-    for(var i =0; i<(resultats.length-1);i++){
-        for(var j=0;i<(resultats[i].lenght-1;i++)){
+    for(var i = 0; i< (resultats.length - 1); i++){
+        for(var j = 0; i < (resultats[i].lenght - 1); i++){
             if (resultats[i][j]===0){
-                traduction[i]+="🟦"
+                traduction[i] += "🟦"
             }
             if (resultats[i][j]===1){
-                traduction[i]+="🟥"
+                traduction[i] += "🟥"
             }
             if (resultats[i][j]===2){
-                traduction[i]+="🟩"
+                traduction[i] += "🟩"
             }   
         }
     }
