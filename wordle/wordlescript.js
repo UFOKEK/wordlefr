@@ -415,6 +415,7 @@ function jouer() {
             
             if (testGagner(motResultat,motJouer)) {
                 gagner = true;
+                finDeMatch()
                 console.log(motResultat);
 
             }
