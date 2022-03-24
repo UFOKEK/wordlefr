@@ -415,31 +415,29 @@ function jouer() {
             
             if (testGagner(motResultat,motJouer)) {
                 gagner = true;
-                finDeMatch()
-                console.log(motResultat);
+                emojiThis(motResultat);
 
             }
         }
     }
 }
-
-function finDeMatch() {
-    if (gagner) {
-        fetch("http://wordleapi.philsp.ca/", {
-                method: 'post',
-                headers: {
-                        "Content-type": "application/json; charset=UTF-8"
-                },
-                body: JSON.stringify({score: motResultat})
-                }
-            )
-      .then(function (data) {
-        console.log(data);
-      })
-      .catch(function (error) {
-        console.log('Request failed: ', error);
-      });
+function emojiThis(resultats){
+    var color_map = {0: '🟦', 1: '🟥', 2: '🟩'};
+    var traduction = ["Mot du jour"]
+    for(var i =0; i<(resultats.length-1);i++){
+        for(var j=0;i<(resultats[i].lenght-1;i++)){
+            if (resultats[i][j]===0){
+                traduction[i]+="🟦"
+            }
+            if (resultats[i][j]===1){
+                traduction[i]+="🟥"
+            }
+            if (resultats[i][j]===2){
+                traduction[i]+="🟩"
+            }   
+        }
     }
+    console.log(traduction);
 }
 
 function supprimer() {
