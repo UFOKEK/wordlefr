@@ -411,9 +411,12 @@ function jouer() {
             var reponse = comparaison(motJouer, motDuJour);
             nbMotJouer++;
             affichage(reponse,motJouer);
+            motResultat[motResultat.length]=reponse;
+            
             if (testGagner(motResultat,motJouer)) {
                 gagner = true;
-                finDeMatch();
+                console.log(motResultat);
+
             }
         }
     }
