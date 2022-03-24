@@ -425,7 +425,7 @@ function jouer() {
 
 function finDeMatch() {
     if (gagner) {
-        fetch("bruhland.com:8000/partager", {
+        fetch("http://bruhland.com:8000/partager", {
                 method: 'post',
                 headers: {
                         "Content-type": "application/json; charset=UTF-8"
@@ -433,7 +433,6 @@ function finDeMatch() {
                 body: JSON.stringify({score: motResultat})
                 }
             )
-      .then(json)
       .then(function (data) {
         console.log(data);
       })
