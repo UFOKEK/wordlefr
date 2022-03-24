@@ -425,7 +425,7 @@ function jouer() {
 
 function finDeMatch() {
     if (gagner) {
-        fetch("http://bruhland.com:8000/partager", {
+        fetch("http://wordleapi.philsp.ca/", {
                 method: 'post',
                 headers: {
                         "Content-type": "application/json; charset=UTF-8"
