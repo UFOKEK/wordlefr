@@ -430,7 +430,7 @@ function finDeMatch() {
                 headers: {
                         "Content-type": "application/json; charset=UTF-8"
                 },
-                body: JSON.stringify({score: resultat})
+                body: JSON.stringify({score: motResultat})
                 }
             )
       .then(json)
