@@ -197,7 +197,7 @@ function emojiThis(resultats){
         }
         traduction.push("\n")
     }
-    console.log(traduction);
+    console.log(traduction.join(""));
 }
 
 function supprimer() {
