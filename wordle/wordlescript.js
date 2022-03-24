@@ -183,8 +183,8 @@ function jouer() {
 function emojiThis(resultats){
     var color_map = {0: '🟦', 1: '🟥', 2: '🟩'};
     var traduction = []
-    for(var i = 0; i < (resultats.length - 1); i++){
-        for(var j = 0; j < (resultats[i].length - 1); j++){
+    for(var i = 0; i < (resultats.length); i++){
+        for(var j = 0; j < (resultats[i].length ); j++){
             if (resultats[i][j] == 0){
                 traduction.push("🟦")
             }
@@ -195,6 +195,7 @@ function emojiThis(resultats){
                 traduction.push("🟩")
             }   
         }
+        traduction.push("/n")
     }
     console.log(traduction);
 }
