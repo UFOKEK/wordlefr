@@ -367,7 +367,7 @@ function affichage(resultats,mot) {
 
 function testGagner(resultats) {
     for (var i = 0; i < resultats[resultats.length - 1].length; i++) {
-        if (resultats[resultats.length - 1][i] != 2) {  return false;}
+        if (resultats[resultats.length - 1][i] != 2) {return false;}
     }
     return true
 }
@@ -413,8 +413,29 @@ function jouer() {
             affichage(reponse,motJouer);
             if (testGagner(motResultat,motJouer)) {
                 gagner = true;
+                finDeMatch();
             }
         }
+    }
+}
+
+function finDeMatch() {
+    if (gagner) {
+        fetch("bruhland.com:8000/partager", {
+                method: 'post',
+                headers: {
+                        "Content-type": "application/json; charset=UTF-8"
+                },
+                body: JSON.stringify({score: resultats})
+                }
+            )
+      .then(json)
+      .then(function (data) {
+        console.log(data);
+      })
+      .catch(function (error) {
+        console.log('Request failed: ', error);
+      });
     }
 }
 
