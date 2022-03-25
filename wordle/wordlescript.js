@@ -181,7 +181,7 @@ function jouer() {
 }
 
 function emojiThis(resultats){
-    var color_map = {0: '⬛', 1: '🟨', 2: '🟩'};
+    var color_map = {0: '⬛', 1: '🟥', 2: '🟩'};
     var traduction = []
     for(var i = 0; i < (resultats.length); i++){
         for(var j = 0; j < (resultats[i].length ); j++){
@@ -189,7 +189,7 @@ function emojiThis(resultats){
                 traduction.push("⬛")
             }
             else if (resultats[i][j] == 1){
-                traduction.push("🟨")
+                traduction.push("🟥")
             }
             else if (resultats[i][j] == 2){
                 traduction.push("🟩")
