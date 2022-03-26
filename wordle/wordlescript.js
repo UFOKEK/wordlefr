@@ -198,7 +198,10 @@ function emojiThis(resultats){
         traduction.push("\n")
     }
     console.log(traduction.join(""));
-    document.querySelector(".reussi").innerhtml=traduction;
+    const reussiElement = document.createElement("p");
+    const clav= document.querySelector(".clavier");
+    clav.insertBefore(reussiElement);
+   
 }
 
 function supprimer() {
