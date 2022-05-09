@@ -120,7 +120,11 @@ function affichage(resultats,mot) {
     }
     //On passe au prochain rang 
     rang.classList.remove("actif");
-    rang.nextElementSibling.classList.add("actif")
+    if (rang.nextElementSibling != null ) {
+      rang.nextElementSibling.classList.add("actif")
+    } else {
+        // display share button end game 
+    }
 }
 
 function testGagner(resultats) {
